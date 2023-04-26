@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.container .planmensual, .container .plananual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "planmensual"; }
+
+/* estilo del menu */
+.colo-menu:hover {
+  border-bottom: 2px solid #086308; }
+
+/* estilos de titulos */
+.encabezado {
+  font-family: "Russo One", sans-serif;
+  text-align: center; }
+
+.titulo {
+  padding-top: 20px;
+  color: red;
+  font-size: 4rem; }
+
+.unite {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  opacity: 0.8; }
+
+/* estilos del main */
+.main-home {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1 fr);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center;
+  gap: 20px; }
+
+/* estilos opciones de compra */
+.container {
+  margin-top: 40px;
+  object-fit: cover;
+  color: #3b3b3b;
+  opacity: 0.9; }
+  .container .p-titulo {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    text-align: center; }
+  .container .p-precio {
+    font-size: 3rem;
+    font-family: "Oswald", sans-serif; }
+  .container .p-descripcion {
+    font-family: "Oswald", sans-serif; }
+
+/* estilos del boton */
+.ComprarYa {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 1s;
+  width: 50%; }
+
+.ComprarYa:hover {
+  border-radius: 30px;
+  background-color: red;
+  font-weight: bolder; }
+
+/* estilos del footer */
+footer {
+  background-color: #0e0d0d;
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-top: 20px; }
+
+.contenedor-iconos {
+  color: #928b8b; }
+
+/* mq para tablets y computadoras de escritorio */
+@media screen and (min-width: 600px) {
+  .main-home {
+    grid-template-columns: repeat(2, 1fr); } }
+
+/* FIN CSS DE HOME */
+.container .planmensual, .container .plananual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "planmensual"; }
+
+/*COMIENZO CSS CONTACTO */
+/* estilos de fondo */
+.main-contacto {
+  background-image: url(../IMG/Contacto/UFCcontacto1.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke; }
+
+.titulo-contacto {
+  text-align: center;
+  margin-top: 0px; }
+
+/* estilos para el formulario */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-transform: uppercase; }
+
+/* estilos para campos */
+label,
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px; }
+
+.mensaje {
+  height: 100px; }
+
+.boton {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer; }
+
+.boton:hover {
+  border-radius: 30px;
+  background-color: #2fff00;
+  transition: all 1s;
+  font-size: larger;
+  color: whitesmoke;
+  text-decoration: underline; }
+
+/* mq para tablets y computadoras de escritorio */
+@media screen and (min-width: 600px) {
+  .contacto {
+    flex-direction: column;
+    justify-content: center; }
+  label,
+  input,
+  textarea {
+    margin-right: 20px;
+    margin-bottom: 0; }
+  .boton {
+    margin-top: 20px;
+    margin-left: 20px; } }
+
+/* FIN CSS DE CONTACTO */
+.container .planmensual, .container .plananual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "planmensual"; }
+
+.UFC30 {
+  background-image: url(../IMG/UFC30/12062022_ufc_30_hub_mcgregor_ufc_229.jpg);
+  background-size: cover;
+  opacity: 9;
+  height: 110vh;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f7f0f0;
+  padding-top: 160px;
+  object-fit: cover; }
+
+.UFC30-encabezado {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 38px;
+  opacity: 0.8; }
+
+.container-UFC30 {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 100%;
+  display: grid; }
+
+.titulo-UFC30 {
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+  color: #3b3b3b;
+  text-align: center; }
+
+.VideoUFC30 {
+  margin-left: 20px;
+  opacity: 0.9;
+  text-align: center; }
+
+/* mq para tablets y computadoras */
+@media screen and (min-width: 600px) {
+  .container-UFC30 {
+    display: flex;
+    flex-direction: row; } }
+
+/* FIN CSS UFC 30 */
+.container .planmensual, .container .plananual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "planmensual"; }
+
+.EventosPage {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px; }
+
+.eventos-titulo {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 38px;
+  opacity: 0.8; }
+
+.eventos {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  text-align: center; }
+
+.informacion {
+  font-size: 1.4rem;
+  font-family: "Oswald", sans-serif;
+  color: #3b3b3b; }
+
+.container .planmensual, .container .plananual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "planmensual"; }
+
+.titulo-noticias {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  padding-top: 30px; }
+
+.subtitulo-noticias {
+  font-family: #3b3b3b;
+  text-align: center;
+  text-transform: uppercase;
+  color: #dd1e1e;
+  padding-top: 30px; }
+
+.noticias {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-row-gap: 10px;
+  text-align: center; }
+
+.img-noticias {
+  width: 50%;
+  height: 50%; }
+
+.noticia-uno, .noticia-dos, .noticia-tres, .noticia-cuatro {
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  color: #3b3b3b; }
+
+.boton-noticias {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 1s;
+  width: 50%; }
+
+.boton-noticias:hover {
+  border-radius: 30px;
+  background-color: red;
+  font-weight: bolder; }
+
+/* mq para tablets y computadoras */
+@media screen and (min-width: 600px) {
+  .noticias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    padding-top: 50px; }
+  .img-noticias {
+    height: 300px;
+    width: 500px; } }
+
+/* FIN CSS DE NOTICIAS*/

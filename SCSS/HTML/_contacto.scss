@@ -1,0 +1,82 @@
+// import
+
+@import "../Utilidades/Variables";
+@import "../Utilidades/mixin";
+@import "../Utilidades/extend";
+
+/*COMIENZO CSS CONTACTO */
+
+/* estilos de fondo */
+
+.main-contacto {
+    @include main-contacto;
+    
+}
+
+.titulo-contacto {
+    text-align: center;
+    margin-top: 0px;
+  }
+  
+  /* estilos para el formulario */
+
+  .contacto {
+    @include flex;
+    align-items: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
+
+  /* estilos para campos */
+label,
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.mensaje {
+  height: 100px;
+}
+
+.boton {
+    background-color: $fondo-boton-contacto;
+    color: $boton-contacto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .boton:hover{
+    border-radius: 30px;
+    background-color: rgb(47, 255, 0);
+    transition: all 1s;
+    font-size: larger;
+    color: $color-principal;
+    text-decoration: underline;
+  }
+
+  /* mq para tablets y computadoras de escritorio */
+
+@media screen and (min-width: 600px) {
+    .contacto {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    label,
+    input,
+    textarea {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .boton {
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+  }
+  
+  /* FIN CSS DE CONTACTO */

@@ -1,0 +1,46 @@
+// import
+
+@import "../Utilidades/Variables";
+@import "../Utilidades/mixin";
+@import "../Utilidades/extend";
+
+.UFC30{
+    @include UFC30;
+}
+
+.UFC30-encabezado {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    opacity: 0.8;
+  }
+
+  .container-UFC30{
+    @include grid(1fr, 1fr);
+  }
+
+  .titulo-UFC30 {
+    font-size: 1.4rem;
+    font-family: $texto-dos;
+    color: $color-secundario;
+    text-align: center;
+  }
+  
+  .VideoUFC30 {
+    margin-left: 20px;
+    opacity: 0.9;
+    text-align: center;
+  }
+
+  /* mq para tablets y computadoras */
+
+@media screen and (min-width: 600px) {
+    .container-UFC30 {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  
+  /* FIN CSS UFC 30 */

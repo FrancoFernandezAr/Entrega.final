@@ -1,0 +1,36 @@
+ // import
+
+@import "../Utilidades/Variables";
+@import "../Utilidades/mixin";
+@import "../Utilidades/extend";
+
+.EventosPage {
+    font-family: $texto-uno;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+  }
+  
+  .eventos-titulo {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: $texto-dos;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 38px;
+    opacity: 0.8;
+  }
+
+  .eventos {
+    @include grid(1fr, repeat(3, 1fr));
+    text-align: center;
+  }
+
+  .informacion {
+    font-size: 1.4rem;
+    font-family: $texto-dos;
+    color: $color-secundario;
+  }
+
+  
+

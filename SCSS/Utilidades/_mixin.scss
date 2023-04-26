@@ -1,0 +1,95 @@
+//mixin boton home 
+
+@mixin boton-home{
+    
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+        background-color: $color-fondo-boton;
+        color: $color-boton;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: all 1s;
+        width: 50%;
+      
+}
+
+// mixin footer 
+
+@mixin footer{
+    background-color: $fondo-footer;
+    color: $color-principal;
+    font-family: $texto-dos;
+    text-align: center;
+    margin-top: 20px;
+}
+
+// mixin grid
+
+@mixin grid ($gtc, $gtr){
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+// mixin flex
+
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+}
+
+// mixing main contacto
+
+@mixin main-contacto{
+    background-image: url(../IMG/Contacto/UFCcontacto1.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: $texto-dos;
+    color: $color-principal;
+}
+
+// mixin main UFC 30 
+
+@mixin UFC30 {
+    background-image: url(../IMG/UFC30/12062022_ufc_30_hub_mcgregor_ufc_229.jpg);
+    background-size: cover;
+    opacity: 9;
+    height: 110vh;
+    font-family: $texto-uno;
+    text-align: center;
+    text-transform: uppercase;
+    color: $UFC30-titulo;
+    padding-top: 160px;
+    object-fit: cover;
+}
+
+// mixin boton noticias
+
+@mixin boton-noticias{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: $color-fondo-boton;
+    color: $color-boton;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 1s;
+    width: 50%;
+}
+
+//mixin animacion botones
+
+@mixin animacion-boton{
+    border-radius: 30px;
+    background-color: red;
+    font-weight: bolder;
+}

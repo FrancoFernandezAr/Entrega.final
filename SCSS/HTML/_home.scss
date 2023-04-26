@@ -1,0 +1,105 @@
+// import
+
+@import "../Utilidades/Variables";
+@import "../Utilidades/mixin";
+@import "../Utilidades/extend";
+
+/* estilo del menu */
+
+.colo-menu:hover {
+    border-bottom: 2px solid rgb(8, 99, 8);
+  }
+
+/* estilos de titulos */
+
+.encabezado{
+    font-family: $texto-uno;
+    text-align: center;
+}
+
+.titulo{
+    padding-top: 20px;
+    color: $titulo-home;
+    font-size: 4rem;
+}
+
+.unite{
+    font-family: $texto-dos;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+    opacity: 0.8;
+}
+
+/* estilos del main */
+
+.main-home{
+    @include grid(1fr, repeat(2, 1 fr));
+    text-align: center;
+    gap: 20px;
+}
+
+/* estilos opciones de compra */
+
+.container {
+    margin-top: 40px;
+    object-fit: cover;
+    color: $color-secundario;
+    opacity: 0.9;
+
+    .planmensual{
+        @extend %planes;
+    }
+    
+    .plananual{
+        @extend %planes;
+    }
+
+    .p-titulo {
+        font-size: 2rem;
+        font-family: $texto-dos;
+        text-align: center;
+      }
+      
+      .p-precio {
+        font-size: 3rem;
+        font-family: $texto-dos;
+      }
+      
+      .p-descripcion {
+        font-family: $texto-dos;
+      }
+
+
+  }
+
+  /* estilos del boton */
+
+  .ComprarYa {
+    @include boton-home;
+  }
+
+  .ComprarYa:hover{
+    @include animacion-boton;
+  }
+
+   /* estilos del footer */
+
+   footer {
+    @include footer;
+   }
+
+   .contenedor-iconos{
+    color: $color-iconos;
+  }
+
+/* mq para tablets y computadoras de escritorio */
+
+@media screen and (min-width: 600px) {
+    .main-home {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+/* FIN CSS DE HOME */

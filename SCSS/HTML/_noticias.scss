@@ -1,0 +1,68 @@
+ // import
+
+ @import "../Utilidades/Variables";
+ @import "../Utilidades/mixin";
+ @import "../Utilidades/extend";
+
+ .titulo-noticias {
+    font-family: $texto-uno;
+      text-align: center;
+      text-transform: uppercase;
+      color: $color-secundario;
+      padding-top: 30px;
+  }
+
+  .subtitulo-noticias{
+    font-family: $color-secundario;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-noticias;
+    padding-top: 30px;
+  }
+
+  .noticias{
+    @include grid(1fr, repeat(4, 1fr));
+    grid-row-gap: 10px;
+    text-align: center;
+  }
+
+  .img-noticias{
+    width: 50%;
+    height: 50%;
+  }
+  
+  .noticia-uno, .noticia-dos, .noticia-tres, .noticia-cuatro{
+    font-size: 2rem;
+    font-family: $texto-dos;
+    color: rgb(59, 59, 59);
+  }
+
+  .boton-noticias{
+    @include boton-noticias;
+  }
+
+  .boton-noticias:hover{
+    @include animacion-boton;
+  }
+
+  /* mq para tablets y computadoras */
+
+@media screen and (min-width: 600px){
+    .noticias{
+      display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  padding-top: 50px;
+    }
+  
+    .img-noticias {
+      height: 300px;
+      width: 500px;
+    }
+  }
+  
+  
+  /* FIN CSS DE NOTICIAS*/
+
